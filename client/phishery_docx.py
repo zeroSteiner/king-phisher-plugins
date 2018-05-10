@@ -51,6 +51,7 @@ def phishery_inject(input_file, document_urls, output_file=None):
 
 class Plugin(getattr(plugins, 'ClientPluginMailerAttachment', plugins.ClientPlugin)):
 	authors = ['Ryan Hanson', 'Spencer McIntyre', 'Erik Daguerre']
+	classifiers = ('Plugin :: Client :: Email :: Attachment',)
 	title = 'Phishery DOCX URL Injector'
 	description = """
 	Inject Word Document Template URLs into DOCX files. The Phishery technique is
@@ -76,8 +77,6 @@ class Plugin(getattr(plugins, 'ClientPluginMailerAttachment', plugins.ClientPlug
 	auxiliary/server/capture/smb module will have to be used to capture NTLM hashes.
 	The plugin and King Phisher will only support injecting the URL path into the
 	document.\n\n
-	Original Project:\n
-	Phishery homepage: https://github.com/ryhanson/phishery
 	"""
 	homepage = 'https://github.com/securestate/king-phisher-plugins'
 	options = [
@@ -95,6 +94,7 @@ class Plugin(getattr(plugins, 'ClientPluginMailerAttachment', plugins.ClientPlug
 			display_name='Add Landing Pages'
 		)
 	]
+	reference_urls = ('https://github.com/ryhanson/phishery',)
 	req_min_version = min_version
 	version = '2.1.0'
 

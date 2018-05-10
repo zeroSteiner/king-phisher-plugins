@@ -333,17 +333,23 @@
           "Spencer McIntyre",
           "Erik Daguerre"
         ],
-        "description": "Inject Word Document Template URLs into DOCX files. The Phishery technique is used to place multiple document template URLs into the word document (one per line from the plugin settings).\n\n* HTTP URL\n\nThe Jinja variable {{ url.webserver }} can be used for an HTTP URL to track when documents are opened.\n\nNote that to only track opened documents, DO NOT put a URL link into the phishing email to the landing page. This will ensure that visits are only registered for instance where the document is opened.\n\n* HTTPS URL\n\nThe Jinja variable {{ url.webserver }} can be used for an HTTPS landing page that requires basic authentication.\n\nNote that for HTTPS URLs, the King Phisher server needs to be configured with a proper, trusted SSL certificate for the user to be presented with the basic authentication prompt.\n\n* FILE URL\n\nUtilizing the file://yourtargetserver/somepath URL format will capture SMB credentials.\n\nNote that King Phisher does not support SMB, and utilization of SMB requires that a separate capture/sniffer application such as Metasploit's auxiliary/server/capture/smb module will have to be used to capture NTLM hashes. The plugin and King Phisher will only support injecting the URL path into the document.\n\nOriginal Project:\n\nPhishery homepage: https://github.com/ryhanson/phishery",
+        "classifiers": [
+          "Plugin :: Client :: Email :: Attachment"
+        ],
+        "description": "Inject Word Document Template URLs into DOCX files. The Phishery technique is used to place multiple document template URLs into the word document (one per line from the plugin settings).\n\n* HTTP URL\n\nThe Jinja variable {{ url.webserver }} can be used for an HTTP URL to track when documents are opened.\n\nNote that to only track opened documents, DO NOT put a URL link into the phishing email to the landing page. This will ensure that visits are only registered for instance where the document is opened.\n\n* HTTPS URL\n\nThe Jinja variable {{ url.webserver }} can be used for an HTTPS landing page that requires basic authentication.\n\nNote that for HTTPS URLs, the King Phisher server needs to be configured with a proper, trusted SSL certificate for the user to be presented with the basic authentication prompt.\n\n* FILE URL\n\nUtilizing the file://yourtargetserver/somepath URL format will capture SMB credentials.\n\nNote that King Phisher does not support SMB, and utilization of SMB requires that a separate capture/sniffer application such as Metasploit's auxiliary/server/capture/smb module will have to be used to capture NTLM hashes. The plugin and King Phisher will only support injecting the URL path into the document.\n\n",
         "files": [
           {
             "path-destination": "phishery_docx.py",
             "path-source": "client/phishery_docx.py",
-            "signature": "AagoCP8UfKax0M8M889bKDicaTMCoMGwtv5ag686iEv1cLX+4htPxUwiBJwtNVF+bb6SGgHNb59AhsaypKGEHxehANFQR49SJhWollJQvdTsjX6n023uXTMUDbcpopzQrLnEWoifW8xAbhQaLGfATyzV1e0PMzyQ8dYhqSA17BC5bX8Z",
+            "signature": "ATe8sU60KhTm+/wR7edLVNP5jGhnz8ArSV9RVo1AEf9kzb+wX2qLh6jwKwhA2bpWV1zC/YpsiiuUxsymuDNUsvyeALSwkblL1tyN8knHaSesmmja64ARUUNAdbq/Hx/qRlWE0bNLCbovCJAILQ4/I2zm+e29VmZf6fqV9Qqd3762F4Hf",
             "signed-by": "github.com/zeroSteiner"
           }
         ],
         "homepage": "https://github.com/securestate/king-phisher-plugins",
         "name": "phishery_docx",
+        "reference_urls": [
+          "https://github.com/ryhanson/phishery"
+        ],
         "requirements": {
           "minimum-python-version": null,
           "minimum-version": "1.9.0b5",
@@ -682,8 +688,8 @@
       }
     ]
   },
-  "created": "2018-03-29T18:03:11.890436+00:00",
+  "created": "2018-05-10T14:22:34.168717+00:00",
   "created-by": "github.com/zeroSteiner",
-  "signature": "AK29zB5j02ll1PSYJL+Z17dPU1Rt7APpyDY+3QTYYpaInaOEJaJnx5Q9QfsMCcN2cfzu0NcFHofQBOHNuDbSxJw1AdJezgB7tR+ql0PwlJpIgcmRqFhYoLt4RaRdz5ZMUYr5b2OEQOlj8Nofcn/iXGIlukYpHvEm0eVeM1aB619tmL6j",
+  "signature": "AVsThUWmUE6hc26MnFDfMzf2ZBPJkoN6g+W6EaJOWI7W7y+MLQZtSsqp82bDfp14Ep6tvrS4AE85Bgek1670U4HfADH3PP2R1ETKEPwZg5vA386z+rv7cqVFL/GlpIuJyyFywUIH4pr8e7oY7nww17gkwhPMGpSrQjkRgfwfhokE02cp",
   "signed-by": "github.com/zeroSteiner"
 }
