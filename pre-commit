@@ -41,6 +41,7 @@ import importlib
 import os
 import sys
 
+import ecdsa
 import jinja2
 
 __version__ = '1.0'
@@ -270,6 +271,16 @@ def main():
 		serializers.JSON.dump(collection, file_h)
 	if arguments.git_add:
 		plugins_repo.index.add(['catalog-collections.json'])
+
+	if arguments.sign_all:
+		with open(os.path.join(plugins_dir, 'catalog.json'), 'r') as file_h:
+			catalog = serializers.JSON.load(file_h)
+		try:
+			signing_key.verifying_key.verify_dict(catalog)
+		except ecdsa.keys.BadSignatureError:
+			catalog = signing_key.sign_dict(catalog)
+			with open(os.path.join(plugins_dir, 'catalog.json'), 'w') as file_h:
+				serializers.JSON.dump(catalog, file_h)
 	return os.EX_OK
 
 if __name__ == '__main__':
