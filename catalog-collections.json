@@ -233,7 +233,7 @@
           {
             "path-destination": "kpm_export_on_exit.py",
             "path-source": "client/kpm_export_on_exit.py",
-            "signature": "AcYZxazQh3mdNEGwaGC4CyIFOezaoWhS58iMuIHWQtz+wNJDVUk50nAfFiv3iaA/VRzF2tmhqv/2VRbdGvjOQ/xyAfizPl38szeqtX/qfMQcNtCe4qDfYRIN7beNoK6gRFHSqn4/VLqwbTR/x/IgwAQC8GeMOLd64guzQ+qDfQwgC/h+",
+            "signature": "ABo54aTWSkjCovR4X1AR58fVdi6I3+Dsn9yzKtwodldij7NgDK/r+D6uBjkpt+XWMyl48omB/iNGzNr6XdhSvO3vAFV8/k8d+0ReC21vPeeOY2sgO4SDGuS64Z1ap9FEgBucV5KUhFaHiJ1aev7rpW2Dfwdc6sBqojPnRqdI1j7Srpn6",
             "signed-by": "github.com/zeroSteiner"
           }
         ],
@@ -243,7 +243,7 @@
           "minimum-version": "1.3.0b0"
         },
         "title": "Save KPM On Exit",
-        "version": "1.0"
+        "version": "1.0.1"
       },
       {
         "authors": [
@@ -837,8 +837,8 @@
       }
     ]
   },
-  "created": "2019-04-10T16:52:03.658624+00:00",
+  "created": "2019-05-19T18:01:57.242689+00:00",
   "created-by": "github.com/zeroSteiner",
-  "signature": "AHw5vnaWrIMhod3fx28HlezhsESRlDHF/+odqf41PjRIGgivf8dT4NXQYJjL83yJNLPqH0PmqaZWoh1xT1b87pebATJ8GOBczn0yk1OxHDAr393NHYHQ5teiN2Gm+LnAf9+cQNJkiRZ+aT13n0fwSSTBRpAC9X71Ru6EbJ0GTha5Al5z",
+  "signature": "Ae/TZKbQo5Sqv/dZdTfDBmDHbTzts1m34QI/de7aoBb1raQRQrMvHaoKalBHeuRhD1W3sMdtHq9L8i3xTyycLOqdAFtx0u83icC8XKQ5yHwv1lYkOYyfk+lXOLymINSZdTSphKuRIpC05plQJDcK2o7vhrpMEWC5Do55sdj7z5d/KquN",
   "signed-by": "github.com/zeroSteiner"
 }
